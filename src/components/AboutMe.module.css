@@ -1,0 +1,88 @@
+.about {
+  padding-bottom: var(--space-lg);
+}
+
+.intro {
+  font-size: var(--text-base);
+  color: var(--color-white-text-secondary);
+  line-height: var(--leading-relaxed);
+  max-width: 68ch;
+  margin-bottom: var(--space-lg);
+}
+
+.strengthsHeader {
+  margin-bottom: var(--space-sm);
+}
+
+.strengthsTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.strengthsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.strengthItem {
+  border: 1px solid var(--color-white-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: border-color var(--duration-fast) var(--ease-out-quart);
+}
+
+.strengthItem.open {
+  border-color: oklch(72% 0.16 75 / 0.3);
+}
+
+.strengthToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-xs) var(--space-sm);
+  text-align: left;
+  transition: background var(--duration-fast) var(--ease-out-quart);
+}
+
+.strengthToggle:hover {
+  background: var(--color-white-surface);
+}
+
+.strengthName {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-white-text);
+}
+
+.chevron {
+  color: var(--color-white-text-secondary);
+  transition: transform var(--duration-normal) var(--ease-out-quart);
+  flex-shrink: 0;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.strengthBody {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--duration-normal) var(--ease-out-quart);
+}
+
+.strengthBodyInner {
+  overflow: hidden;
+}
+
+.strengthBodyInner p {
+  padding: 0 var(--space-sm) var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-white-text-secondary);
+  line-height: var(--leading-relaxed);
+}

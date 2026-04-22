@@ -1,0 +1,76 @@
+.education {
+  padding-bottom: var(--space-xl);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+/* ── Education ── */
+.eduList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.eduItem {
+  padding: var(--space-xs) 0;
+}
+
+.degree {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-white-text);
+  margin-bottom: 2px;
+}
+
+.institution {
+  font-size: var(--text-sm);
+  color: var(--color-white-text-secondary);
+}
+
+/* ── Certifications ── */
+.certList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.certItem {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2xs);
+  padding: var(--space-2xs) 0;
+  font-size: var(--text-sm);
+  position: relative;
+  padding-left: var(--space-sm);
+}
+
+.certItem::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: var(--text-base);
+}
+
+.certName {
+  font-weight: 600;
+  color: var(--color-white-text);
+}
+
+.certPlatform {
+  color: var(--color-white-text-secondary);
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
