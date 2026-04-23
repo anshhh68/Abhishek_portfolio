@@ -45,7 +45,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 1, 0.5, 1] }}
       >
         <Image
-          src="/profile.jfif"
+          src="/profile.jpg"
           alt="Abhishek Ranjan Profile"
           fill
           priority
