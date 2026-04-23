@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import {
   LayoutDashboard,
   User,
@@ -87,8 +88,7 @@ export default function Sidebar() {
         <div className={styles.profileSection}>
           <div className={styles.avatar}>
             <div className={styles.avatarInner}>
-               {/* Headshot image can go here. Using placeholder for now */}
-               <span>AR</span>
+               <Image src="/dp.jpeg" alt="Abhishek Ranjan" fill style={{ objectFit: 'cover' }} priority />
             </div>
           </div>
           <h1 className={styles.name}>Abhishek<br/>Ranjan</h1>
