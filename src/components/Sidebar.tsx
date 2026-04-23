@@ -92,7 +92,7 @@ export default function Sidebar() {
             </div>
           </div>
           <h1 className={styles.name}>Abhishek<br/>Ranjan</h1>
-          <p className={styles.title}>Senior Data Analyst</p>
+          <p className={styles.title}>Data Analytics End to End</p>
         </div>
 
         {/* Navigation */}

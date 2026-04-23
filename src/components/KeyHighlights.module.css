@@ -17,6 +17,15 @@
   gap: var(--space-sm);
   background: transparent;
   border: none;
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  background: oklch(20% 0.02 260 / 0.05);
+  transform: translateY(-2px);
 }
 
 .iconWrap {

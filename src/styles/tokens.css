@@ -33,7 +33,7 @@
   --color-white-bg: #ffffff;
   --color-white-surface: #f9f9f9;
   --color-white-text: oklch(35% 0.01 260);
-  --color-white-text-secondary: oklch(80% 0.01 260); /* Very light gray for hero text */
+  --color-white-text-secondary: oklch(55% 0.01 260); /* Darker gray for readability on light background */
   --color-white-border: oklch(92% 0.01 260);
 
   /* ── Typography ── */

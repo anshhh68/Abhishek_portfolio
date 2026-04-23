@@ -8,6 +8,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Intelligence from "@/components/Intelligence";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
           <AboutMe />
         </div>
         <KeyHighlights />
-        <div id="skills" />
+        <div id="skills">
+          <Intelligence />
+        </div>
         <div id="projects">
           <FeaturedProjects />
         </div>

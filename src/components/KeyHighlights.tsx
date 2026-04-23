@@ -19,8 +19,8 @@ interface HighlightCard {
 const highlights: HighlightCard[] = [
   {
     icon: Briefcase,
-    value: "3+",
-    numericValue: 3,
+    value: "4+",
+    numericValue: 4,
     suffix: "+",
     prefix: "",
     label: "Years Experience",

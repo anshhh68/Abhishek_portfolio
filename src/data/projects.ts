@@ -85,6 +85,48 @@ export const featuredProjects: FeaturedProject[] = [
         "Planning to add predictive revenue forecasting using Python ML models embedded in Power BI, implement anomaly detection alerts for KPI deviations, and extend the dashboard to include customer satisfaction and NPS metrics from survey data.",
     },
   },
+  {
+    id: "automated-etl",
+    title: "Automated ETL Reporting",
+    tag: "Featured",
+    description:
+      "Designed and deployed end-to-end automated ETL pipelines using SQL and Python, replacing manual Excel workflows and significantly reducing reporting turnaround time.",
+    impact: "Reduced manual processing by 35%",
+    techStack: ["SQL", "Python", "Power BI", "Excel"],
+    deepDive: {
+      problem:
+        "Analysts were spending 10–12 hours per week manually extracting, transforming, and loading data from multiple source systems into Excel before any reporting could begin. This created bottlenecks, frequent human errors, and delayed delivery of critical business insights to stakeholders.",
+      methodology:
+        "Designed a modular ETL architecture using Python (pandas, SQLAlchemy) for data extraction and transformation, with SQL Server as the staging layer. Built parameterized stored procedures for incremental data loads, reducing processing time. Integrated automated email delivery and Power BI data refresh triggers on pipeline completion.",
+      challenges:
+        "Legacy source systems had no API support, requiring web scraping and ODBC connections for extraction. Handling schema drift across quarterly data dumps required dynamic column mapping logic. Ensuring zero data loss during pipeline failures necessitated a robust error logging and retry mechanism.",
+      results:
+        "Eliminated 35% of manual reporting effort across the analytics team. Reporting turnaround improved from 2 days to under 4 hours. Pipeline now runs unattended on a daily schedule with automated error alerts, freeing analysts to focus on insight generation rather than data wrangling.",
+      future:
+        "Plan to migrate the pipeline to a cloud-native architecture using Azure Data Factory, introduce dbt for transformation layer documentation, and add a data lineage tracker for governance compliance.",
+    },
+  },
+  {
+    id: "enterprise-analytics",
+    title: "Enterprise Analytics Platform",
+    tag: "Featured",
+    description:
+      "Built a centralised enterprise analytics platform integrating SQL and Python-based ETL pipelines with multi-source data, enabling unified reporting across departments.",
+    impact: "Reduced TAT by 30% across reporting cycles",
+    techStack: ["SQL", "Python", "Tableau", "Power BI"],
+    deepDive: {
+      problem:
+        "The organisation operated in data silos — each department maintained separate Excel trackers and reporting tools, with no unified view of business performance. Cross-functional reporting required manual consolidation across 6+ data sources, making company-wide analytics near-impossible within weekly reporting cycles.",
+      methodology:
+        "Architected a centralised data warehouse using SQL Server with a star-schema model. Built Python-based ETL pipelines to ingest data from CRM, ERP, HR, and finance systems into unified fact and dimension tables. Developed a Tableau-based self-service analytics layer and a Power BI executive dashboard for C-suite KPI visibility.",
+      challenges:
+        "Data governance was the primary challenge — different teams used inconsistent naming conventions, date formats, and KPI definitions. Establishing a data dictionary and enforcing schema contracts required cross-team alignment sessions. Performance tuning SQL queries across 1M+ row tables was critical to achieving sub-5-second dashboard load times.",
+      results:
+        "Reduced average reporting TAT by 30% across all departments. The platform now serves 80+ users across finance, operations, and product teams. Monthly business reviews shifted from static PowerPoint decks to live interactive dashboards, significantly improving data-driven decision-making velocity.",
+      future:
+        "Planning to extend the platform with a ML-powered anomaly detection layer for KPI deviations, integrate NLP-based query interface for business users, and migrate to a Lakehouse architecture using Azure Synapse for real-time analytics capability.",
+    },
+  },
 ];
 
 export const additionalProjects: AdditionalProject[] = [
@@ -94,18 +136,7 @@ export const additionalProjects: AdditionalProject[] = [
     description: "Real-time KPI monitoring for leadership teams.",
     impact: "Real-time visibility",
   },
-  {
-    id: "etl-reporting",
-    title: "Automated ETL Reporting",
-    description: "Reduced manual processing by 35%.",
-    impact: "35% efficiency gain",
-  },
-  {
-    id: "enterprise-analytics",
-    title: "Enterprise Analytics Platform",
-    description: "Automated SQL + Python ETL reducing TAT by 30%.",
-    impact: "30% TAT reduction",
-  },
+
   {
     id: "sentiment-model",
     title: "Sentiment Analysis Model",

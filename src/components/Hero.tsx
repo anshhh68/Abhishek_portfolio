@@ -14,7 +14,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
         >
-          SENIOR DATA ANALYST | ANALYTICS CONSULTANT
+          DATA ANALYST | ANALYTICS CONSULTANT
         </motion.p>
 
         <motion.h1

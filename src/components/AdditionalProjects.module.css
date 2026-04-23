@@ -14,18 +14,61 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -8px oklch(20% 0.05 260 / 0.18);
+}
+
+/* ── In Development badge ── */
+.card::after {
+  content: "🚧 In Development";
+  position: absolute;
+  top: var(--space-xs);
+  right: var(--space-xs);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: oklch(50% 0.08 75);
+  background: oklch(97% 0.05 75);
+  border: 1px solid oklch(88% 0.08 75);
+  border-radius: var(--radius-full);
+  padding: 2px 8px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.card:hover::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ── Chart Graphics ── */
 .chartContainer {
   height: 120px;
-  background: oklch(60% 0.01 260); /* Medium gray background like reference */
+  background: oklch(60% 0.01 260);
   border-radius: var(--radius-sm);
   overflow: hidden;
   padding: var(--space-xs);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  transition: background 0.35s ease, filter 0.35s ease;
+}
+
+.card:hover .chartContainer {
+  background: oklch(25% 0.02 260);
+  filter: brightness(0.85) saturate(1.2);
 }
 
 .svgChart {
