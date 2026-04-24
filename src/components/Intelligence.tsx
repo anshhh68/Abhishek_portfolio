@@ -48,9 +48,9 @@ const intelligenceItems = [
   },
   {
     title: "Market Research Intelligence",
-    description: "Conducting end-to-end primary and secondary market research — from quantitative surveys and qualitative deep-dives to competitive benchmarking and sentiment analysis — across global markets. Experienced in coordinating multi-country panels and translating consumer intelligence into investment-grade insights at Acuity Knowledge Partners.",
+    description: "Leading end-to-end market research programs across quantitative and qualitative studies, competitive benchmarking, and sentiment analysis. Translating consumer intelligence into investment-grade insights for global stakeholders.",
     icon: Globe2,
-    tags: ["Quantitative Research", "Qualitative Research", "Panel Management", "Competitive Benchmarking", "Sentiment Analysis", "Investment Research"],
+    tags: ["Quantitative Research", "Qualitative Research", "Competitive Benchmarking", "Investment Insights"],
   },
   {
     title: "Client Interaction",

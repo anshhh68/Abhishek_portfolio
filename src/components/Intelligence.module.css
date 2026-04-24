@@ -94,6 +94,15 @@
 }
 
 @media (min-width: 768px) {
+  .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -179,6 +188,10 @@
   .description {
     font-size: var(--text-sm);
     line-height: var(--leading-normal);
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .featuredTags {
