@@ -48,9 +48,8 @@ const intelligenceItems = [
   },
   {
     title: "Market Research Intelligence",
-    description: "Conducting end-to-end primary and secondary market research — from quantitative surveys and qualitative deep-dives to competitive benchmarking and sentiment analysis — across global markets. Experienced in coordinating multi-country panels (CInt, Prime Panels) and translating consumer intelligence into investment-grade insights at Acuity Knowledge Partners.",
+    description: "Conducting end-to-end primary and secondary market research — from quantitative surveys and qualitative deep-dives to competitive benchmarking and sentiment analysis — across global markets. Experienced in coordinating multi-country panels and translating consumer intelligence into investment-grade insights at Acuity Knowledge Partners.",
     icon: Globe2,
-    span: 2,
     tags: ["Quantitative Research", "Qualitative Research", "Panel Management", "Competitive Benchmarking", "Sentiment Analysis", "Investment Research"],
   },
   {
@@ -58,14 +57,12 @@ const intelligenceItems = [
     description: "Leading multi-region analytics programs, coordinating with global vendor panels (CInt, Prime Panels), and managing client requirements end-to-end.",
     icon: Handshake,
     highlight: true,
-    span: 2,
   },
   {
     title: "Insight Presentation",
     description: "Translating complex analytical findings into clear narratives and delivering executive dashboard presentations to leadership teams.",
     icon: Presentation,
     highlight: true,
-    span: 2,
   },
 ];
 
@@ -83,7 +80,6 @@ export default function Intelligence() {
           const cardClass = [
             styles.card,
             item.highlight ? styles.clientInteractionCard : "",
-            item.span === 2 ? styles.spanTwo : "",
           ].filter(Boolean).join(" ");
 
           return (
