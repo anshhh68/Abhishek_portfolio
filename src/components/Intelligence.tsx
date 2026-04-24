@@ -50,7 +50,6 @@ const intelligenceItems = [
     title: "Market Research Intelligence",
     description: "Conducting end-to-end primary and secondary market research — from quantitative surveys and qualitative deep-dives to competitive benchmarking and sentiment analysis — across global markets. Experienced in coordinating multi-country panels (CInt, Prime Panels) and translating consumer intelligence into investment-grade insights at Acuity Knowledge Partners.",
     icon: Globe2,
-    featured: true,
     span: 2,
     tags: ["Quantitative Research", "Qualitative Research", "Panel Management", "Competitive Benchmarking", "Sentiment Analysis", "Investment Research"],
   },
@@ -83,7 +82,6 @@ export default function Intelligence() {
           const Icon = item.icon;
           const cardClass = [
             styles.card,
-            item.featured ? styles.featuredCard : "",
             item.highlight ? styles.clientInteractionCard : "",
             item.span === 2 ? styles.spanTwo : "",
           ].filter(Boolean).join(" ");
@@ -102,7 +100,7 @@ export default function Intelligence() {
               }}
             >
               <div className={styles.iconWrap}>
-                <Icon size={item.featured ? 22 : 20} />
+                <Icon size={20} />
               </div>
               <h3 className={styles.title}>{item.title}</h3>
               <p className={styles.description}>{item.description}</p>

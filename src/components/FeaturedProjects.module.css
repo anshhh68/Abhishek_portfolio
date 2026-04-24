@@ -47,86 +47,14 @@
 
 /* ── Preview ── */
 .preview {
-  background: oklch(20% 0.02 245);
-  padding: var(--space-2xs);
-  height: 130px;
-}
-
-.previewInner {
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius-sm);
-  background: oklch(16% 0.025 245);
+  position: relative;
+  height: 170px;
   overflow: hidden;
+  border-bottom: 1px solid var(--color-white-border);
 }
 
-.previewBar {
-  display: flex;
-  gap: 4px;
-  padding: 6px 8px;
-  background: oklch(12% 0.02 245);
-}
-
-.dot {
-  width: 6px;
-  height: 6px;
-  border-radius: var(--radius-full);
-  background: oklch(35% 0.01 245);
-}
-
-.dot:first-child {
-  background: oklch(65% 0.12 25);
-}
-
-.dot:nth-child(2) {
-  background: oklch(72% 0.16 75);
-}
-
-.dot:nth-child(3) {
-  background: oklch(72% 0.14 155);
-}
-
-.previewContent {
-  padding: var(--space-2xs);
-  display: flex;
-  gap: var(--space-2xs);
-  height: calc(100% - 24px);
-}
-
-.previewChart {
-  width: 50%;
-  border-radius: 4px;
-  background: linear-gradient(
-    135deg,
-    oklch(72% 0.11 195 / 0.15),
-    oklch(72% 0.16 75 / 0.1)
-  );
-}
-
-.previewLines {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding-top: 4px;
-}
-
-.previewLines span {
-  height: 6px;
-  border-radius: 3px;
-  background: oklch(30% 0.01 245);
-}
-
-.previewLines span:nth-child(1) {
-  width: 80%;
-}
-
-.previewLines span:nth-child(2) {
-  width: 60%;
-}
-
-.previewLines span:nth-child(3) {
-  width: 70%;
+.previewImage {
+  object-fit: cover;
 }
 
 /* ── Card Body ── */
@@ -328,12 +256,56 @@
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
-    max-width: 500px;
+    max-width: none;
   }
 
   .header {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-2xs);
+  }
+
+  .preview {
+    height: 190px;
+  }
+
+  .cardBody {
+    gap: var(--space-xs);
+  }
+
+  .titleRow {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+
+  .featuredTag {
+    margin-left: 0;
+  }
+
+  .actions {
+    gap: 8px;
+  }
+
+  .btnSecondary,
+  .btnDeepDive {
+    min-height: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .preview {
+    height: 170px;
+  }
+
+  .cardBody {
+    padding: var(--space-xs);
+  }
+
+  .description,
+  .impact,
+  .btnSecondary,
+  .btnDeepDive {
+    font-size: 0.72rem;
   }
 }

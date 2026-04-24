@@ -1,0 +1,18 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d1e24"/>
+      <stop offset="100%" stop-color="#3b3d47"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <text x="80" y="120" fill="#ecefff" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700">Business Performance Dashboard</text>
+  <rect x="80" y="160" width="1040" height="430" rx="20" fill="#20232b" stroke="#9499b8" stroke-width="2"/>
+  <rect x="120" y="210" width="300" height="120" rx="14" fill="#31384a"/>
+  <rect x="450" y="210" width="300" height="120" rx="14" fill="#31384a"/>
+  <rect x="780" y="210" width="300" height="120" rx="14" fill="#31384a"/>
+  <text x="150" y="282" fill="#b8c2ff" font-family="Segoe UI, Arial, sans-serif" font-size="30">Revenue +24%</text>
+  <text x="480" y="282" fill="#b8c2ff" font-family="Segoe UI, Arial, sans-serif" font-size="30">Profit +11%</text>
+  <text x="810" y="282" fill="#b8c2ff" font-family="Segoe UI, Arial, sans-serif" font-size="30">Growth +9%</text>
+  <polyline points="130,520 260,460 400,485 540,430 680,450 820,390 1040,360" fill="none" stroke="#88a0ff" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Star,
   ExternalLink,
@@ -43,23 +44,15 @@ export default function FeaturedProjects() {
                 ease: [0.25, 1, 0.5, 1],
               }}
             >
-              {/* Dashboard Preview Placeholder */}
+              {/* Project Thumbnail */}
               <div className={styles.preview}>
-                <div className={styles.previewInner}>
-                  <div className={styles.previewBar}>
-                    <span className={styles.dot} />
-                    <span className={styles.dot} />
-                    <span className={styles.dot} />
-                  </div>
-                  <div className={styles.previewContent}>
-                    <div className={styles.previewChart} />
-                    <div className={styles.previewLines}>
-                      <span />
-                      <span />
-                      <span />
-                    </div>
-                  </div>
-                </div>
+                <Image
+                  src={project.thumbnail}
+                  alt={`${project.title} thumbnail`}
+                  fill
+                  className={styles.previewImage}
+                  sizes="(max-width: 900px) 100vw, 33vw"
+                />
               </div>
 
               {/* Card body */}

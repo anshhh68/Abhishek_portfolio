@@ -128,33 +128,8 @@
   background: oklch(95% 0.05 180);
 }
 
-/* ── Featured (Market Research) card ── */
 .spanTwo {
   grid-column: span 2;
-}
-
-.featuredCard {
-  background: linear-gradient(135deg, oklch(98% 0.02 245) 0%, oklch(97% 0.03 180) 100%);
-  border-color: var(--color-accent);
-  border-width: 2px;
-  padding: var(--space-lg);
-}
-
-.featuredCard::before {
-  height: 5px;
-  background: linear-gradient(90deg, var(--color-accent), var(--color-teal));
-}
-
-.featuredCard:hover {
-  border-color: var(--color-accent);
-  box-shadow: 0 16px 40px -12px oklch(72% 0.16 245 / 0.18);
-}
-
-.featuredCard .iconWrap {
-  width: 48px;
-  height: 48px;
-  background: oklch(93% 0.06 245);
-  color: var(--color-accent);
 }
 
 .featuredTags {
@@ -174,4 +149,33 @@
   border-radius: var(--radius-full);
   padding: 3px 10px;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 900px) {
+  .featuredTags {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: var(--space-sm);
+  }
+
+  .title {
+    font-size: var(--text-sm);
+  }
+
+  .description {
+    font-size: var(--text-xs);
+  }
+
+  .featuredTags {
+    margin-top: 0;
+  }
+
+  .tag {
+    font-size: 0.66rem;
+    padding: 2px 8px;
+  }
 }

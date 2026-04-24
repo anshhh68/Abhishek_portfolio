@@ -2,6 +2,7 @@ export interface FeaturedProject {
   id: string;
   title: string;
   tag: string;
+  thumbnail: string;
   description: string;
   impact: string;
   techStack: string[];
@@ -26,6 +27,7 @@ export const featuredProjects: FeaturedProject[] = [
     id: "churn-analysis",
     title: "Customer Churn Analysis",
     tag: "Featured",
+    thumbnail: "/projects/churn-analysis.svg",
     description:
       "Analyzed customer data to identify key churn drivers using SQL & Python. Built an interactive Power BI dashboard to track metrics and provide actionable insights.",
     impact: "Reduced churn risk by 15-20%",
@@ -47,6 +49,7 @@ export const featuredProjects: FeaturedProject[] = [
     id: "conjoint-analysis",
     title: "Conjoint Analysis",
     tag: "Featured",
+    thumbnail: "/projects/conjoint-analysis.svg",
     description:
       "Performed Conjoint Analysis to understand consumer preferences for product features. Generated utility scores and identified optimal product mix.",
     impact: "Identified key drivers of preference and optimal product mix",
@@ -68,6 +71,7 @@ export const featuredProjects: FeaturedProject[] = [
     id: "business-dashboard",
     title: "Business Performance Dashboard",
     tag: "Featured",
+    thumbnail: "/projects/business-dashboard.svg",
     description:
       "Developed a KPI dashboard to track revenue, profit, and growth across regions and products. Automated data refresh and improved reporting efficiency.",
     impact: "Improved decision-making speed and KPI visibility",
@@ -89,6 +93,7 @@ export const featuredProjects: FeaturedProject[] = [
     id: "automated-etl",
     title: "Automated ETL Reporting",
     tag: "Featured",
+    thumbnail: "/projects/automated-etl.svg",
     description:
       "Designed and deployed end-to-end automated ETL pipelines using SQL and Python, replacing manual Excel workflows and significantly reducing reporting turnaround time.",
     impact: "Reduced manual processing by 35%",
@@ -110,6 +115,7 @@ export const featuredProjects: FeaturedProject[] = [
     id: "enterprise-analytics",
     title: "Enterprise Analytics Platform",
     tag: "Featured",
+    thumbnail: "/projects/enterprise-analytics.svg",
     description:
       "Built a centralised enterprise analytics platform integrating SQL and Python-based ETL pipelines with multi-source data, enabling unified reporting across departments.",
     impact: "Reduced TAT by 30% across reporting cycles",
