@@ -32,7 +32,7 @@
   position: absolute;
   top: var(--space-xs);
   right: var(--space-xs);
-  font-size: 0.65rem;
+  font-size: var(--text-xs);
   font-weight: 600;
   letter-spacing: 0.04em;
   color: oklch(50% 0.08 75);
@@ -191,5 +191,22 @@
 @media (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .card::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: var(--text-base);
+  }
+
+  .desc {
+    font-size: var(--text-sm);
   }
 }

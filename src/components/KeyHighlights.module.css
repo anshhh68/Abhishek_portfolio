@@ -110,6 +110,30 @@
   }
 }
 
+@media (max-width: 600px) {
+  .highlights {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-lg);
+  }
+
+  .grid {
+    gap: var(--space-md);
+  }
+
+  .card {
+    padding: var(--space-xs);
+  }
+
+  .iconWrap {
+    width: 52px;
+    height: 52px;
+  }
+
+  .value {
+    font-size: var(--text-xl);
+  }
+}
+
 @media (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;

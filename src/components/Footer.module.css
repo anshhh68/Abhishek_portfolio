@@ -23,4 +23,10 @@
     padding: var(--space-md) var(--space-sm);
     text-align: center;
   }
+
+  .copy,
+  .updated {
+    font-size: var(--text-xs);
+    line-height: var(--leading-normal);
+  }
 }

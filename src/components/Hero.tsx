@@ -23,7 +23,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15, ease: [0.25, 1, 0.5, 1] }}
         >
-          Turning complex data into <br />
+          Turning complex data into{" "}
           <span className={styles.highlight}>actionable insights.</span>
         </motion.h1>
 

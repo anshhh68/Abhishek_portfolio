@@ -74,7 +74,8 @@
 .period {
   font-size: var(--text-xs);
   color: var(--color-white-text-secondary);
-  white-space: nowrap;
+  white-space: normal;
+  text-align: right;
   font-weight: 500;
 }
 
@@ -104,5 +105,17 @@
   .header {
     flex-direction: column;
     gap: 2px;
+  }
+
+  .entry {
+    gap: var(--space-sm);
+  }
+
+  .period {
+    text-align: left;
+  }
+
+  .bullet {
+    font-size: var(--text-xs);
   }
 }

@@ -32,6 +32,11 @@ export default function Sidebar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
+    document.body.classList.toggle("nav-open", mobileOpen);
+    return () => document.body.classList.remove("nav-open");
+  }, [mobileOpen]);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -77,11 +82,22 @@ export default function Sidebar() {
         className={styles.mobileToggle}
         onClick={() => setMobileOpen(!mobileOpen)}
         aria-label="Toggle navigation"
+        aria-expanded={mobileOpen}
+        aria-controls="mobile-sidebar-nav"
       >
         {mobileOpen ? <X size={22} /> : <Menu size={22} />}
       </button>
 
+      {mobileOpen && (
+        <button
+          className={styles.backdrop}
+          onClick={() => setMobileOpen(false)}
+          aria-label="Close navigation menu"
+        />
+      )}
+
       <aside
+        id="mobile-sidebar-nav"
         className={`sidebar-container ${styles.sidebar} ${mobileOpen ? styles.open : ""}`}
       >
         {/* Profile Section */}

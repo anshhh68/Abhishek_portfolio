@@ -86,3 +86,19 @@
   color: var(--color-white-text-secondary);
   line-height: var(--leading-relaxed);
 }
+
+@media (max-width: 600px) {
+  .about {
+    padding-bottom: var(--space-md);
+  }
+
+  .intro {
+    margin-bottom: var(--space-md);
+    max-width: 100%;
+  }
+
+  .strengthToggle {
+    min-height: 44px;
+    padding: 10px var(--space-sm);
+  }
+}

@@ -41,7 +41,7 @@
   --font-body: 'Manrope', system-ui, sans-serif;
 
   /* Fluid type scale — 1.33 ratio (Perfect Fourth) */
-  --text-xs: clamp(0.7rem, 0.65rem + 0.2vw, 0.75rem);
+  --text-xs: clamp(0.75rem, 0.68rem + 0.2vw, 0.8rem);
   --text-sm: clamp(0.8rem, 0.75rem + 0.2vw, 0.875rem);
   --text-base: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
   --text-md: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);

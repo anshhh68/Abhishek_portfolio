@@ -83,6 +83,7 @@
   transition:
     background var(--duration-fast) var(--ease-out-quart),
     transform var(--duration-fast) var(--ease-out-quart);
+  min-height: 44px;
 }
 
 .submitBtn:hover {
@@ -101,5 +102,18 @@
 @media (max-width: 600px) {
   .row {
     grid-template-columns: 1fr;
+  }
+
+  .form {
+    gap: var(--space-xs);
+  }
+
+  .input,
+  .textarea {
+    font-size: var(--text-base);
+  }
+
+  .submitBtn {
+    width: 100%;
   }
 }

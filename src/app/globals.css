@@ -26,6 +26,10 @@ body {
   overflow-x: hidden;
 }
 
+body.nav-open {
+  overflow: hidden;
+}
+
 /* ── Scrollbar ── */
 ::-webkit-scrollbar {
   width: 6px;
@@ -161,10 +165,23 @@ button {
   .section {
     padding: var(--space-lg) var(--space-md);
   }
+
+  .main-content {
+    padding-top: 64px;
+  }
 }
 
 @media (max-width: 600px) {
   .section {
     padding: var(--space-md) var(--space-sm);
+  }
+
+  .main-content {
+    padding-top: 60px;
+  }
+
+  .section-title {
+    font-size: var(--text-md);
+    letter-spacing: 0.04em;
   }
 }
