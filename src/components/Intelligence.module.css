@@ -99,12 +99,19 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
   }
+
   .spanTwo {
     grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    gap: var(--space-sm);
   }
 }
 
